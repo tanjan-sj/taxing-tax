@@ -4,6 +4,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import * as React from "react";
+import SideNavList from "./SideNavList";
 
 export default function PermanentDrawer() {
   return (
@@ -19,32 +20,7 @@ export default function PermanentDrawer() {
       <Box sx={{
         width: 256, overflow: 'auto'
       }}>
-        <List>
-          <ListItem button key="Features">
-            <ListItemIcon>
-              <AppsIcon/>
-            </ListItemIcon>
-            <ListItemText primary="Features"/>
-          </ListItem>
-          <ListItem button key="Enterprise">
-            <ListItemIcon>
-              <BusinessCenterIcon/>
-            </ListItemIcon>
-            <ListItemText primary="Enterprise"/>
-          </ListItem>
-          <ListItem button key="Support">
-            <ListItemIcon>
-              <LiveHelpIcon/>
-            </ListItemIcon>
-            <ListItemText primary="Support"/>
-          </ListItem>
-          <ListItem button key="ICO">
-            <ListItemIcon>
-              <AttachMoneyIcon/>
-            </ListItemIcon>
-            <ListItemText primary="ICO"/>
-          </ListItem>
-        </List>
+        <SideNavList/>
       </Box>
     </Drawer>
   );
