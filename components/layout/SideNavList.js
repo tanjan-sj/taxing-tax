@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
-import {SideBarData} from "./data/SideBarData";
+import {SideBarData} from "../data/SideBarData";
 import { useRouter } from 'next/router'
 
 const SideNavList = () => {
